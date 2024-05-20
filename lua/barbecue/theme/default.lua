@@ -24,6 +24,7 @@ local M = {
   ellipsis = { fg = hl("Conceal").fg },
   separator = { fg = hl("Conceal").fg },
   modified = { fg = hl("String").fg },
+  diagnostics = hl("DiagnosticError"),
 
   dirname = { fg = hl("Conceal").fg },
   basename = { bold = true },
