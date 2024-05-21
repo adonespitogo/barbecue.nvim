@@ -92,8 +92,6 @@ function M.basename(winnr, bufnr)
     highlight = theme.highlights.basename
   end
 
-print("text hightlight", highlight)
-
   return Entry.new(
     {
       basename,
