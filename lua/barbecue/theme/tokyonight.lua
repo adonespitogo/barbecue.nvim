@@ -9,7 +9,7 @@ local M = {
 
   diagnostics_error = { fg = c.red },
   diagnostics_warning = { fg = c.orange },
-  diagnostics_hint = { fg = c.green },
+  diagnostics_hint = { fg = c.green1 },
 
   dirname = { fg = c.dark5 },
   basename = { fg = c.fg_dark, bold = true },
