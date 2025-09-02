@@ -86,8 +86,14 @@ function M.basename(winnr, bufnr)
   end
 
   local highlight
-  if config.user.show_diagnostics and utils.has_diagnostics(bufnr) then
-    highlight = theme.highlights.diagnostics
+  if config.user.show_diagnostics then
+    if utils.has_diagnostics(bufnr, vim.diagnostic.severity.ERROR) then
+      highlight = theme.highlights.diagnostics_error
+    elseif utils.has_diagnostics(bufnr, vim.diagnostic.severity.WARN) then
+      highlight = theme.highlights.diagnostics_warning
+    elseif utils.has_diagnostics(bufnr, vim.diagnostic.severity.HINT) then
+      highlight = theme.highlights.diagnostics_hint
+    end
   else
     highlight = theme.highlights.basename
   end

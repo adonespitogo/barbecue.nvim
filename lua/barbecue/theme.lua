@@ -14,7 +14,10 @@ M.highlights = {
   ellipsis = "barbecue_ellipsis",
   separator = "barbecue_separator",
   modified = "barbecue_modified",
-  diagnostics = "barbecue_diagnostics",
+
+  diagnostics_error = "barbecue_diagnostics_error",
+  diagnostics_warning = "barbecue_diagnostics_warning",
+  diagnostics_hint = "barbecue_diagnostics_hint",
 
   dirname = "barbecue_dirname",
   basename = "barbecue_basename",
