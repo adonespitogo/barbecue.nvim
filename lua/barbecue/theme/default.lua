@@ -25,9 +25,9 @@ local M = {
   separator = { fg = hl("Conceal").fg },
   modified = { fg = hl("String").fg },
 
-  diagnostics_error = { fg = hl("DiagnosticError").fg },
-  diagnostics_warning = { fg = hl("DiagnosticWarn").fg },
-  diagnostics_hint = { fg = hl("DiagnosticHint").fg },
+  diagnostics_error = { fg = "red" },
+  diagnostics_warning = { fg = "orange" },
+  diagnostics_hint = { fg = "green" },
 
   dirname = { fg = hl("Conceal").fg },
   basename = { bold = true },
