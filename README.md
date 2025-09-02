@@ -179,9 +179,9 @@ you've seen in the select menu of raw `:Barbecue`.
       modified = { fg = "#737aa2" },
 
     -- these highlights are used for diagnostic indicator when `show_diagnostics` is set to `true`
-      diagnostics_error = { fg = hl("DiagnosticError").fg },
-      diagnostics_warning = { fg = hl("DiagnosticWarn").fg },
-      diagnostics_hint = { fg = hl("DiagnosticHint").fg },
+      diagnostics_error = { fg = "red" },
+      diagnostics_warning = { fg = "orange" },
+      diagnostics_hint = { fg = "green" },
 
       -- these highlights represent the _text_ of three main parts of barbecue
       dirname = { fg = "#737aa2" },
