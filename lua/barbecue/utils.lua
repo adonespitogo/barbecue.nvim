@@ -4,14 +4,12 @@ local M = {}
 
 --- Check if file has diagnostic errors.
 ---
----@param buf integer String to be escaped.
+---@param buf integer
 ---@return boolean
-function M.has_diagnostics(buf)
-  local severity = vim.diagnostic.severity.ERROR
-  local n = #vim.diagnostic.get(
-    buf,
-    { severity = vim.diagnostic.severity[string.upper(severity)] }
-  )
+function M.has_diagnostics(buf, severity)
+  local n = #vim.diagnostic.get(buf, {
+    severity = severity or vim.diagnostic.severity.ERROR,
+  })
   return n > 0
 end
 
